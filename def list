@@ -1,0 +1,30 @@
+- def, который открывает .txt файл и записывает в него данные.
+def write_to_file(filename, text):
+    f = open(filename, "w")
+    f.write(text)
+    f.close()
+
+write_to_file("data.txt", "Привет, файл!")
+
+
+- def, который читает .txt файл и выводит его содержимое.
+def read_file(filename):
+    f = open(filename, "r")
+    text = f.read()
+    print(text)
+    f.close()
+
+read_file("data.txt")
+
+
+- def, который читает .txt файл и выводит его содержимое. (по сточно)
+def read_file(filename):
+    f = open(filename, "r")
+    for line in f:
+        print(line, end="")
+    f.close()
+
+read_file("data.txt")
+
+
+- 
