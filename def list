@@ -41,6 +41,8 @@ import glob
 def find_py_files():
     path = input("Введите путь к папке: ")
     files = glob.glob(path + "/*.py")
+
+----------------------------
     for file in files:
         print(file)
 
