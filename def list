@@ -6,6 +6,7 @@ def write_to_file(filename, text):
 
 write_to_file("data.txt", "Привет, файл!")
 
+----------------------------
 
 - def, который читает .txt файл и выводит его содержимое.
 def read_file(filename):
@@ -16,8 +17,9 @@ def read_file(filename):
 
 read_file("data.txt")
 
+----------------------------
 
-- def, который читает .txt файл и выводит его содержимое. (по сточно)
+- def, который читает .txt файл и выводит его содержимое(по сточно).
 def read_file(filename):
     f = open(filename, "r")
     for line in f:
@@ -26,5 +28,17 @@ def read_file(filename):
 
 read_file("data.txt")
 
+----------------------------
 
-- 
+- def, которая ищет и выводит все .py файлы в папке, путь к которой вводит пользователь.
+
+import glob
+
+def find_py_files():
+    path = input("Введите путь к папке: ")
+    files = glob.glob(path + "/*.py")
+    
+    for file in files:
+        print(file)
+
+find_py_files()
